@@ -33,7 +33,12 @@ class _ChatScreenState extends State<ChatScreen> {
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add),
         onPressed: (){
-         
+        //  Firestore.instance
+        //   .collection('chats/sQA2UNbEJqVFkhvu4KQc/messages/')
+        //   .add({'text':'this was added by clicking the button'});
+        print("yes");
+        Firestore.instance.collection('chats/sQA2UNbEJqVFkhvu4KQc/messages')
+        .add({'text':"yoman its mee"});
         },
       ),
     );
